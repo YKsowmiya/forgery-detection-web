@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Image Forgery Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Digital Image Forgery Detection</h1>
+    <p>Deep Learning Based Detection System</p>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="main-layout">
+    <div class="top-section">
+      <!-- Upload Section -->
+      <section class="upload-section">
+  <h2>Upload an Image</h2>
+  <form>
+    <!-- Custom styled file input -->
+    <label for="imageInput" class="custom-file-label">Choose File</label>
+    <input type="file" accept="image/*" id="imageInput">
+    
+    <button type="submit" id="submitBtn">Detect Forgery</button>
+  </form>
+</section>
+
+
+      <!-- Image View -->
+      <section class="image-view" id="previewBox">
+        <p>No image selected</p>
+      </section>
+    </div>
+
+    <!-- Result Section -->
+    <section class="result-section">
+      <h2>Detection Result</h2>
+      <div class="result-box">
+        <p><strong>Status:</strong> <span id="statusLabel">Genuine / Forged</span></p>
+        <p><strong>Confidence Score:</strong> <span id="scoreLabel">--%</span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Digital Image Forensics Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
